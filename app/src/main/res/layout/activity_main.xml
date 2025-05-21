@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/img">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Math Bridges"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Instructions -->
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect the islands with the correct solution!"
+        android:textSize="18sp"
+        android:layout_below="@id/gameTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Math Problem -->
+    <TextView
+        android:id="@+id/mathProblem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solve: 5 + 3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/instructionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- EditText for User Input -->
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+    android:hint="Enter your answer"
+    android:inputType="number"
+    android:textSize="18sp"
+    android:layout_below="@id/mathProblem"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:padding="16dp" />  <!-- Added padding for better user experience -->
+
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:layout_below="@id/userInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Answer Text -->
+    <TextView
+        android:id="@+id/answerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The answer will appear here."
+        android:textSize="18sp"
+        android:layout_below="@id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <!-- Reward Image -->
+    <ImageView
+        android:id="@+id/rewardImage"
+        android:layout_width="133dp"
+        android:layout_height="166dp"
+        android:layout_below="@id/answerText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_1"
+        android:visibility="gone" />
+
+</RelativeLayout>
